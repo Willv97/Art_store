@@ -1,0 +1,62 @@
+/* Reset some default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('Background1.png'); /* Background image for the entire page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Place art cards side by side */
+    gap: 10px; /* Add spacing between art cards */;
+}
+
+/* Art cards styling */
+.art-card {
+    width: calc(33.33% - 10px); /* Make art cards 1/3 of the width with spacing between them */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(210, 125, 125, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.art-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image styling */
+.art-card img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #646363;
+    color: rgb(126, 122, 122);
+    text-align: center;
+    padding: 10px;
+}

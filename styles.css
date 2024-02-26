@@ -1,0 +1,91 @@
+/* Reset some default styles */
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/Background1.png'); /* Background image for the entire page */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Start new row */
+    gap: 10px; /* Add spacing between art cards */
+}
+
+/* Art cards styling */
+.art-card {
+    width: calc(20% - 10px); /* Set the width for 5 cards in a row */
+    background-color: #d8d8d8;
+    border: 1px solid #dddddd18;
+    border-radius: 10px;
+    padding: 10px; /* Reduce the padding to make them smaller */
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    margin-right: 10px; /* Add margin to separate the cards horizontally */
+    margin-bottom: 10px; /* Add margin to separate the rows */
+}
+
+.art-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image styling */
+.art-card img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #555;
+    border-radius: 5px;
+}
+
+/* Link and navigation styles */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    animation: ease-in;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: wavy;
+    color: rgb(222, 54, 54);
+    transition: color 0.3s; /* Add a color transition on hover */
+}
+
+nav a:hover {
+    color: limegreen; /* Change the color on hover */;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
