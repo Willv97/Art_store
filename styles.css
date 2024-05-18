@@ -94,6 +94,15 @@ nav a:hover {
     cursor: pointer;
 }
 
+.newsletter-button {
+    background-color: black;
+    color: yellow;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 5 5 10 lightblue;
+    transition: opacity 0.15s;
+}
+
 /* Footer styles */
 footer {
     background-color: #333;
